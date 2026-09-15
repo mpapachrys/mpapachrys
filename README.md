@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Manos 👋</h1>
+<h1 align="center">Hi, I'm Manos </h1>
 <h3 align="center">AI Engineer</h3>
 
 <p align="center">
@@ -26,12 +26,11 @@ Most of my projects sit at the point where an LLM has to touch real systems — 
 
 ### 🚀 Projects
 
-**[matchify-ai-hiring-platform](https://github.com/mpapachrys/matchify-ai-hiring-platform)** — `Next.js 15 · FastAPI · MongoDB · MinIO`
+**[matchify-ai-hiring-platform](https://github.com/mpapachrys/matchify-ai-hiring-platform)** — `FastAPI · MongoDB · MinIO` (team project — my part: the AI integration, plus some FastAPI work)
 A hiring platform for a single company: post roles, review applicants, move them through a pipeline.
 - **Problem:** resume parsing needed an LLM, but the platform had to run and be testable without an API key, and a bad/expensive model call couldn't be allowed to block the core product.
-- **Approach:** the parser sits behind a `Protocol` interface — a regex-only stub is the default, a real model via OpenRouter is one env var away. Nothing outside that module knows which one is running.
-- **Also handles:** two-layer role gating (UX-level cookie check + server-side enforcement that's the only one that actually matters for security), a documented read-only export boundary with a separate Neo4j-based matching service, and a MongoDB schema where a few explicit design calls (snapshotting job data at apply-time, a hard uniqueness constraint instead of an app-level check) prevent real race conditions and data-integrity bugs.
-- **Tested:** concurrent duplicate-application race, role boundaries, full auth flow — against a real database, not mocks.
+- **Approach:** I built the parser behind a `Protocol` interface — a regex-only stub is the default, a real model via OpenRouter is one env var away. Nothing outside that module knows which one is running, so an unconfigured key falls back to the stub instead of failing the upload.
+- **Team project:** the rest of the platform (auth, role-gating, data model, frontend) was built with two teammates — see the repo for the full picture.
 
 **[agentic-rag-mcp-system](https://github.com/mpapachrys/agentic-rag-mcp-system)** — `Python · LangChain · ChromaDB · MCP`
 Automates classifying and acting on incoming customer-order emails.
