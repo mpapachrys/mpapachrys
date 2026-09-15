@@ -2,8 +2,8 @@
 <h3 align="center">AI Engineer</h3>
 
 <p align="center">
-I build AI systems that solve specific problems — not demos, not tech showcases.
-RAG, MCP, LLM agents, and knowledge graphs are tools I reach for when they fit, not a checklist.
+I like figuring out how to connect LLMs to real data and real systems —
+RAG, MCP, agents, knowledge graphs — through projects I build end to end.
 </p>
 
 <p align="center">
@@ -13,9 +13,9 @@ RAG, MCP, LLM agents, and knowledge graphs are tools I reach for when they fit, 
 
 ---
 
-### 🔍 What I actually do
+### 🔍 What I focus on
 
-Most of my work sits at the point where an LLM has to touch real systems — a database, a document store, a calendar, another team's service — and stop being a chatbot. That means:
+Most of my projects sit at the point where an LLM has to touch real systems — a database, a document store, a calendar, another team's service — and stop being just a chatbot. In practice that's meant:
 
 - **Grounding models in real data** so they answer from retrieved facts, not memory (RAG, hybrid retrieval with knowledge graphs when relationships matter more than similarity)
 - **Decoupling agent reasoning from tool execution** using MCP, so tools can change without touching agent logic
@@ -58,7 +58,6 @@ Binary classifier for human- vs AI-generated text using BGE-M3 embeddings — th
 | **LLM / Agents** | LangChain, MCP, OpenAI, OpenRouter, RAG pipelines |
 | **Retrieval / Data** | ChromaDB, Neo4j (knowledge graphs), PostgreSQL, MongoDB |
 | **Backend** | Python, FastAPI |
-| **Frontend** | Next.js, TypeScript |
 | **Infra** | Docker, CI/CD (GitLab), Azure |
 | **ML** | PyTorch, scikit-learn, embeddings/NLP |
 
