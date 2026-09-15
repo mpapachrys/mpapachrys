@@ -58,8 +58,10 @@ Binary classifier for human- vs AI-generated text using BGE-M3 embeddings — th
 | **LLM / Agents** | LangChain, MCP, OpenAI, OpenRouter, RAG pipelines |
 | **Retrieval / Data** | ChromaDB, Neo4j (knowledge graphs), PostgreSQL, MongoDB |
 | **Backend** | Python, FastAPI |
+| **Frontend** | Next.js, TypeScript |
 | **Infra** | Docker, CI/CD (GitLab), Azure |
-| **ML** | PyTorch, scikit-learn, embeddings/NLP |
+| **ML / Deep Learning** | PyTorch, TensorFlow, Keras, scikit-learn, CNNs, RNNs/LSTM, Transformers, embeddings, sentiment analysis |
+| **Data Analysis** | pandas, NumPy, Matplotlib, Seaborn, Jupyter, Power BI, SQL |
 
 ---
 
