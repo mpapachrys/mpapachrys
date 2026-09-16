@@ -74,4 +74,4 @@ Binary classifier for human- vs AI-generated text using BGE-M3 embeddings — th
 
 ### 📫 Contact
 
-[LinkedIn](https://www.linkedin.com/in/epapachrysanthou/) · [Credentials](https://www.credential.net/profile/emmanouilpapachrysanthou136156/wallet) · Athens, Greece
+[LinkedIn](https://www.linkedin.com/in/epapachrysanthou/) · Athens, Greece
